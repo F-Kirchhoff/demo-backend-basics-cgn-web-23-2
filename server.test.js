@@ -16,7 +16,7 @@ test("The server responds with Hello World on /hello", async () => {
 test("The server responds with Bye World on /bye", async () => {
   const response = server && (await request(server).get("/bye"));
   expect(response?.statusCode).toBe(200);
-  expect(response?.text).toBe("Bye World");
+  expect(response?.text).toBe("Tschüss World!");
 });
 
 test("The server responds with 42 on /answer", async () => {
